@@ -10,8 +10,9 @@ public class Challenge_4 {
             numList.add(rand);
         }
         numList.add(0);
-
+        // Debug
         System.out.println(numList);
+
         ArrayList<Integer> resultList = new ArrayList<>();
         for (int i = 0; i < (numList.size() -1); i++) {
             int num = numList.get(i);
@@ -24,6 +25,7 @@ public class Challenge_4 {
                 resultList.add(num / num2);
             }
         }
+        // Result
         System.out.println(resultList);
     }
 }
