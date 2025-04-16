@@ -3,7 +3,9 @@ package modules;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
+/**
+ * @see https://www.w3schools.com/java/java_files_read.asp
+ */
 public class Challenge_5 {
     public static void challenge_5() {
         try {
