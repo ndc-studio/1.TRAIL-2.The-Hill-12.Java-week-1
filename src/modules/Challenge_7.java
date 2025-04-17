@@ -19,5 +19,4 @@ public class Challenge_7 {
           e.printStackTrace();
         }
     }
-    
 }
