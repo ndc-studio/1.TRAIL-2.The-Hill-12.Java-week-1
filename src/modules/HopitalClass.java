@@ -46,10 +46,14 @@ public class HopitalClass {
     }
 
     public String toString() {
-        return "The " + date + "\n" +
-        " - " + cardio + " visitors in cardiology\n" +
-        " - " + radio + " visitors in radiology\n" +
-        " - " + visit + " persons are visited familly in hospital\n\n";
+        return  "The " + date + "\n" + 
+                " - " + cardio + " visitors in cardiology\n" +
+                " - " + radio + " visitors in radiology\n" +
+                " - " + visit + " persons are visited familly\n\n";
+    }
+
+    public String toCSV() {
+        return date + "," + cardio + "," + radio + "," + visit + "\n";
     }
 
 }

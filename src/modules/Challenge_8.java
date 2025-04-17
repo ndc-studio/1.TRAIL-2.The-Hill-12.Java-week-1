@@ -21,7 +21,7 @@ public class Challenge_8 {
 
                 HopitalClass hosp = new HopitalClass(date, cardio, radio, visit);
                 System.out.print(hosp);
-
+                WriteFile_C8.writeFile(hosp.toCSV());
             }
             myReader.close();
 
