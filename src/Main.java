@@ -2,7 +2,7 @@ import modules.*;
 
 public class Main {
     // Change pour voir chaque exercices exemple 1 = Challenge_1
-    static int exercice = 1;
+    static int exercice = 5;
 
     public static void main(String[] args) {
         switch (exercice) {
@@ -15,6 +15,10 @@ public class Main {
         
             case 4:
                 Challenge_4.challenge_4();
+                break;
+        
+            case 5:
+                Challenge_5.challenge_5();
                 break;
         }
     }
