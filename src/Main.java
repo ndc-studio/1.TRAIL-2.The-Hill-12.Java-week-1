@@ -20,6 +20,10 @@ public class Main {
             case 5:
                 Challenge_5.challenge_5();
                 break;
+        
+            case 6:
+                Challenge_6.challenge_6();
+                break;
         }
     }
 };
