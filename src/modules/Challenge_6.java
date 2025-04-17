@@ -19,11 +19,9 @@ public class Challenge_6 {
                 String data = myReader.nextLine();
                 String regex = "[^a-zA-Z]";
                 String str = data.replaceAll(regex, "").toLowerCase();
-
                 
                 for (int i = 0; i < str.length(); i++) {
                     char charCurrentI = str.charAt(i);
-
                     
                     for (int j = 0; j < str.length(); j++) {
                         char charCurrentJ = str.charAt(j);
