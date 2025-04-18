@@ -11,9 +11,9 @@ public class WriteDay_C8 {
         FileWriter file = new FileWriter("./src/data/reports-day-C8.csv", true);
         file.write(data);
         file.close();
-        System.out.println("Successfully wrote to the file.");
+        System.out.println("SCRIPT_INFO: Successfully wrote to the file.");
     } catch (IOException e) {
-        System.out.println("An error occurred.");
+        System.out.println("SCRIPT_ERROR: An error occurred.");
         e.printStackTrace();
     }
   }
@@ -22,11 +22,11 @@ public class WriteDay_C8 {
     try {
         new File("./src/data/reports-month-C8.csv");
         FileWriter file = new FileWriter("./src/data/reports-month-C8.csv", true);
-        file.write(data);
+        file.write(data);         
         file.close();
-        System.out.println("Successfully wrote to the file.");
+        System.out.println("SCRIPT_INFO: Successfully wrote to the file.");
     } catch (IOException e) {
-        System.out.println("An error occurred.");
+        System.out.println("SCRIPT_ERROR: An error occurred.");
         e.printStackTrace();
     }
   }
