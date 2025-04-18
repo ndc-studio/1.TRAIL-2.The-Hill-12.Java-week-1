@@ -14,8 +14,8 @@ public class Challenge_8 {
             ArrayList<Integer> visitList = new ArrayList<>();
             Scanner myReader = new Scanner(myObj);
             myReader.nextLine();        
-            WriteDay_C8.writeDay("date,cardiology,radiology,vistors\n");
-            WriteDay_C8.writeMonth("cardio-total, radio-total, visitors-total\n");
+            write.writeDay("date,cardiology,radiology,vistors\n");
+            write.writeMonth("cardio-total, radio-total, visitors-total\n");
 
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
@@ -31,14 +31,14 @@ public class Challenge_8 {
 
                 HopitalClass hosp = new HopitalClass(date, cardio, radio, visit);
                 System.out.print(hosp);
-                WriteDay_C8.writeDay(hosp.toCSV());
+                write.writeDay(hosp.toCSV());
             }
             int cardioSum = cardioList.stream().mapToInt(Integer::valueOf).sum();
             int radioSum = radioList.stream().mapToInt(Integer::valueOf).sum();
             int visitSum = visitList.stream().mapToInt(Integer::valueOf).sum();
 
             String monthTotalValue = cardioSum + "," + radioSum + "," + visitSum + "\n";
-            WriteDay_C8.writeMonth(monthTotalValue);
+            write.writeMonth(monthTotalValue);
 
             System.out.println(
                     "Total of visits in cardiology: " + cardioSum + "\n" +
@@ -46,8 +46,8 @@ public class Challenge_8 {
                     "Total of global visits in hospital: " + visitSum
                 );
             myReader.close();
-            WriteDay_C8.writeMonth("\n");
-            WriteDay_C8.writeDay("\n");
+            write.writeMonth("\n");
+            write.writeDay("\n");
 
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
