@@ -28,6 +28,10 @@ public class Main {
             case 8:
                 Challenge_8.challenge_8();
                 break;
+
+            case 9:
+                Challenge_9.challenge_9();
+                break;
         }
     }
 };
