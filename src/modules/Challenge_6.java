@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 /**
  * @see READ: https://www.w3schools.com/java/java_files_read.asp
@@ -33,9 +34,18 @@ public class Challenge_6 {
                     }
                 }
             }
+            Character mostCount = null;
+            int maxCount = 0;
 
-            System.out.println(counterMap);
+            for (Entry<Character, Integer> entry : counterMap.entrySet()) {
+                if (entry.getValue() > maxCount) {
+                    maxCount = entry.getValue();
+                    mostCount = entry.getKey();
+                }
+            }
 
+            System.out.println("All characters: " + counterMap);
+            System.out.println("\nThe character most count is: \"" + mostCount + "\" (used " +  maxCount + "x)");
             myReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("SCRIPT_ERROR: An error occurred.");
