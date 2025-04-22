@@ -11,13 +11,17 @@ public class Challenge_2 {
         Character charLetter = 'H';
         Boolean boolType = false;
 
-        System.out.println("Byte: " + byteNum);
-        System.out.println("Short: " + shortNum);
-        System.out.println("Integer: " + intNum);
-        System.out.println("Long: " + longNum);
-        System.out.println("Float: " + floatNum);
-        System.out.println("Double: " + doubleNum);
-        System.out.println("Character: " + charLetter);
-        System.out.println("Boolean: " + boolType);
+        System.out.println(
+            "Byte: " + byteNum + "\nShort: " + shortNum + "\nInteger: " + intNum +
+            "\nLong: " + longNum + "\nFloat: " + floatNum + "\nDouble: " + doubleNum +
+            "\nCharacter: " + charLetter + "\nBoolean: " + boolType
+        );
     }
 }
+
+
+/*
+ Très extra : Existe-t-il un moyen de parcourir toutes les variables automatiquement et d'avoir seulement une déclaration print ? Si oui, pourquoi cela n'était-il pas possible avec les types primitifs ?
+ Réponse : oui effectivement on peut toutes les appeller dans un seul print contrairement aux primitifs, et la raison est que les types primitifs ne sont pas enregistrés de la même manière que les objets et ne sont
+ pas concidérés comme des références vers des données mais comme des données a l'état brute.
+ */
