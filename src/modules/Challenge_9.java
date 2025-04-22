@@ -38,9 +38,9 @@ public class Challenge_9 {
                 System.out.println(data);
                 write.writeC9(data);
             } else if (randReason == 1){
-                String data = (date + "," + firstnames[randFirstname] + "," + lastnames[randLastname] + "," + reasons[randReason] + "\n");
+                String data = (date + "," + firstnames[randFirstname] + "," + lastnames[randLastname] + "," + reasons[randReason] + "," + "" + "\n");
                 System.out.println(data);
-                write.writeC9(data);               
+                write.writeC9(data);             
             }
             i++;
         }     
